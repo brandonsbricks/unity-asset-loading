@@ -4,7 +4,7 @@ using Object = UnityEngine.Object;
 
 namespace BRM.UnityAssets.Interfaces
 {
-    public abstract class AssetData<T> where T : Object
+    public class AssetData<T> where T : Object
     {
         public Action<T> OnAssetLoaded;
         public string Name;

@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BRM.UnityAssets.Interfaces"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BRM.UnityAssets", "BRM.UnityAssets\BRM.UnityAssets.csproj", "{430CAA1B-9A4C-4B0A-B0D0-18511606BAEE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BRM.UnityAssets.Editor", "BRM.UnityAssets.Editor\BRM.UnityAssets.Editor.csproj", "{FF95FB1D-5617-4441-8F18-9C834EF9C988}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{430CAA1B-9A4C-4B0A-B0D0-18511606BAEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{430CAA1B-9A4C-4B0A-B0D0-18511606BAEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{430CAA1B-9A4C-4B0A-B0D0-18511606BAEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF95FB1D-5617-4441-8F18-9C834EF9C988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF95FB1D-5617-4441-8F18-9C834EF9C988}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF95FB1D-5617-4441-8F18-9C834EF9C988}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF95FB1D-5617-4441-8F18-9C834EF9C988}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

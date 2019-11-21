@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{430CAA1B-9A4C-4B0A-B0D0-18511606BAEE}</ProjectGuid>
+    <ProjectGuid>{FF95FB1D-5617-4441-8F18-9C834EF9C988}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BRM.UnityAssets</RootNamespace>
-    <AssemblyName>BRM.UnityAssets</AssemblyName>
+    <RootNamespace>BRM.UnityAssets.Editor</RootNamespace>
+    <AssemblyName>BRM.UnityAssets.Editor</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -35,20 +35,28 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml" />
+    <Reference Include="UnityEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\..\Unity2019.2.9f1\Editor\Data\Managed\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>D:\Unity2019.2.9f1\Editor\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\..\..\..\Unity2019.2.9f1\Editor\Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SimpleAssetLoader.cs" />
-    <Compile Include="FileBundleLoader.cs" />
-    <Compile Include="ResourcesLoader.cs" />
+    <Compile Include="AssetDatabaseLoader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BRM.UnityAssets.Interfaces\BRM.UnityAssets.Interfaces.csproj">
       <Project>{8ceaa58f-77d4-45fd-bf63-36c597447664}</Project>
       <Name>BRM.UnityAssets.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BRM.UnityAssets\BRM.UnityAssets.csproj">
+      <Project>{430caa1b-9a4c-4b0a-b0d0-18511606baee}</Project>
+      <Name>BRM.UnityAssets</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
